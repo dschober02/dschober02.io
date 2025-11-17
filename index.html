@@ -52,7 +52,7 @@
     <div id="lead">
         <div id="lead-content">
             <h1>Derek Schober</h1>
-            <h2>Aspiring Software Engineer</h2>
+            <h2>Aspiring Data Strategist and Software Engineer</h2>
             <a href="images/Derek%20Schober%20Resume.pdf" class="btn-rounded-white">Download Resume</a>
         </div>
         <!-- End #lead-content -->
@@ -87,7 +87,7 @@
                         <br><br>
                         A proud graduate of Plainfield North High School (2022), where I was recognized as an Illinois
                         State Scholar by ISAC, received the Presidential Award for Academic Excellence, and was
-                        inducted into the National Honor Society. I graduated with a 4.4 / 4 GPA and an SAT score of 1380.
+                        inducted into the National Honor Society. I graduated with a 4.4 / 4 GPA and an SAT score of 1400.
                     </p>
                 </div>
             </div>
@@ -98,6 +98,23 @@
     <div id="experience" class="background-alt">
         <h2 class="heading">Experience</h2>
         <div id="experience-timeline">
+            <div data-date="May 2025 – October 2025">
+                <h3>Data Metrix</h3>
+                <h4>Data Science Intern</h4>
+                <p>
+                   In this project, I explored reliable data sources for sports analytics and evaluated modern Python
+                   scraping frameworks—including Scrapy, Playwright, and Selenium—while studying common anti-bot
+                   countermeasures such as rotating proxies, stealth headless browsers, and randomized request pacing.
+                   I designed and built an automated scraping system capable of collecting rich sports datasets,
+                   including box scores, play-by-play sequences, betting odds, and injury reports, all while logging
+                   errors and adapting its behavior to avoid detection. After harvesting the raw data, I cleaned,
+                   standardized, and normalized each feed into structured, analysis-ready formats such as CSV and
+                   Parquet. These processed tables integrated seamlessly with SQL workflows and statistical modeling
+                   pipelines, enabling efficient downstream analytics and predictive modeling.
+                </p>
+            </div>
+
+
             <div data-date="November 2023 – Present">
                 <h3>Aurora University Academic Support Center</h3>
                 <h4>Peer Tutor</h4>
@@ -174,17 +191,20 @@
             <h3>Aurora University</h3>
             <span class="education-date">August 2022 - May 2026</span>
             <h4>Bachelor of Science in Data Engineering</h4>
-            <h4>Minor in Mathematics and Computer Science</h4>
+            <h4>Bachelor of Science in Computer Science</h4>
+            <h4>Minor in Mathematics</h4>
             <h4 style="color: black"> Relevant coursework:</h4>
             <ul>
                 <li>Data Structures</li>
-                <li>Object Oriented Design</li>
+                <li>Object Oriented Programming and Design</li>
                 <li>Data Analytics I and II</li>
-                <li>Calculus I, II, III</li>
+                <li>Calculus I, II, and III</li>
                 <li>Probability and Statistics I and II</li>
                 <li>Web Application Development</li>
                 <li>Software Testing, Verification and Validation</li>
                 <li>Problem Solving, Modeling, and Design</li>
+                <li>Advanced Web Application Development</li>
+                <li>Database Implementation and Design</li>
             </ul>
         </div>
         <!-- End .education-block -->
@@ -197,21 +217,49 @@
             <div class="row">
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/quiz.png" style="width: 300px" alt="quiz">
+                        <img src="images/stock.png" style="width: 300px" alt="stock">
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>Quiz Program</h3>
+                        <h3>Stock Prediction Project</h3>
                         <p>
-                            A basic quiz program in JavaScript consists of a series of questions stored in a structured
-                            format, such as an array or object. Each question is paired with its correct answer. As the
-                            user answers each question, the program compares their input with the correct answer. For
-                            correct answers, a score counter is incremented. At the end of the quiz, the program
-                            calculates the total score and displays it to the user. This process involves basic
-                            JavaScript logic for looping through questions, handling user input, and comparing answers,
-                            making it a simple yet effective way to test knowledge interactively.
+                           For my senior capstone project, I built a solo end-to-end Databricks workflow that automates
+                           the collection and prediction of stock market data. The system uses scheduled jobs to ingest
+                           daily OHLC data through yfinance and gather headline data from NewsAPI, which I convert into
+                           a social sentiment score. I designed a forecasting framework that incorporates multiple
+                           modeling techniques—including ARIMA, Simple Exponential Smoothing (SES), Exponential Moving
+                           Averages (EMA), and sentiment-based features—to predict next-day closing prices. I evaluated
+                           performance by comparing the predicted market direction (up or down) to the actual change
+                           from close to close, achieving a 57% directional accuracy over a 100-day period. All data
+                           processing, feature engineering, model training, and evaluation run seamlessly within
+                           Databricks, demonstrating my ability to build a fully automated, production-style machine
+                           learning pipeline from scratch.
                         </p>
-                        <a href="quiz/index.html">View Project</a>
+<!--                        <a href="quiz/index.html">View Project</a>-->
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/basketball.png" style="width: 300px" alt="Basketball"/>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>NBA Relational Database Project</h3>
+                        <p>
+                           For a collaborative school project, I worked with a team to build a full data pipeline
+                           around the 2024 NBA Playoffs. We scraped and cleaned detailed datasets, including every game
+                           played, individual player statistics, and custom game identifiers that uniquely represented
+                           each playoff matchup and the teams involved. All data was modeled and stored in a relational
+                           schema using MariaDB, where we focused on designing efficient table structures and
+                           relationships to support analytical queries. Using JDBC, we connected our application to
+                           the database to run complex queries, generate summaries, and extract meaningful player and
+                           team insights. This project demonstrated our ability to collect raw data, engineer a
+                           structured database solution, and deliver analytical outputs through a reliable end-to-end workflow.
+                        </p>
+<!--                        <a href="#">View Project</a>-->
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -267,7 +315,7 @@
 
             <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/dice.webp" style="width: 300px" alt="Phone screen with social media apps"/>
+                        <img src="images/dice.webp" style="width: 300px" alt="dice"/>
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
